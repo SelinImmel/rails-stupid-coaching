@@ -1,0 +1,14 @@
+<h1>Questions#answer</h1>
+<p>Find me in app/views/questions/answer.html.erb</p>
+
+<!-- will display the question (get-request through the form (ask.html.erb)) -->
+<!-- will display the answer (pre-defined) -->
+
+
+<% if @question.last === "?" %>
+  <%= "Silly question, get dressed and go to work!" %>
+<% elsif @question === "I am going to work" %>
+  <%= "Great!" %>
+<% else %>
+  <%= "I don't care, get dressed and go to work!" %>
+<% end %>
